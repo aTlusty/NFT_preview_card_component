@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Outfit;
+}
+
+:root{
+    --softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg-verydarkblue: hsl(217, 54%, 11%);
+    --card-bg-verydarkblue: hsl(216, 50%, 16%);
+    --line-verydarkblue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+.container{
+    background-color: var(--main-bg-verydarkblue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container{
+    background-color: var(--card-bg-verydarkblue);
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: 525px;
+    border-radius: 15px;
+}
+
+.image-eth{
+    margin: 20px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 7px;
+}
+
+.crypto-text{
+    margin-left: 20px;
+}
+
+.crypto-name{
+    color: var(--white);
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.crypto-name:hover{
+    color: var(--cyan);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.crypto-description{
+    color: var(--softblue);
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.crypto-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.price-container{
+    position:relative;
+    margin-left: -10px;
+}
+
+.eth-icon{
+    position: absolute;
+    left: -19px;
+}
+
+.price{
+    color: var(--cyan);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.days-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -20px;
+}
+
+.clock-icon{
+    position: absolute;
+    left: -22px;
+}
+
+.days-left{
+    color: var(--softblue);
+    font-weight: 300;
+    font-size: 16px;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: var(--line-verydarkblue);
+    margin: .9em 1.5em;
+}
+
+.author-container{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.author-icon{
+    border-radius: 100%;
+    border: 1px solid var(--white);
+    width: 35px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.creation{
+    margin-left: 15px;
+    color: var(--softblue);
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.creator{
+    margin-left: 5px;
+    font-size: 16px;
+    color: var(--white);
+}
+
+.creator:hover{
+    color: var(--cyan);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.attribution{
+    color: var(--white);
+    font-size: 15px;
+    margin-top: 15px;
+    background-color: var(--card-bg-verydarkblue);
+    border-radius: 15px;
+    padding: 10px;
+}
